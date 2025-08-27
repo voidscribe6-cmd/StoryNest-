@@ -1,0 +1,2 @@
+import { supabase } from '../utils/supabaseClient';
+export default function Login(){ const go=async()=>{ await supabase.auth.signInWithOAuth({ provider:'facebook' })}; return <button onClick={go} className='p-2 bg-blue-600 text-white'>Entrar con Facebook</button>; }
